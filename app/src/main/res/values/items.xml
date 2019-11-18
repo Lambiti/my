@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items">
+        <item>二</item>
+        <item>八</item>
+        <item>十</item>
+        <item>十六</item>
+    </string-array>
+    <string-array name="items_1">
+        <item>km</item>
+        <item>m</item>
+        <item>dm</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+    <string-array name="item_2s">
+        <item>立方米</item>
+        <item>立方分米</item>
+        <item>立方厘米</item>
+    </string-array>
+</resources>

@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             help.setOnClickListener(actionPerformed);
             percent.setOnClickListener(actionPerformed);
 
-            Button button = (Button)this.findViewById(R.id.bt_帮助);
+            Button button = (Button)this.findViewById(R.id.bt_换算);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View arg0) {

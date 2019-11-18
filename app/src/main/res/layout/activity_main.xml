@@ -6,12 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints">
+
 
     <LinearLayout
         android:id="@+id/Linear_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
+        android:layout_gravity="bottom"
         android:orientation="vertical">
         <LinearLayout
             android:id="@+id/Linear_12"
@@ -163,8 +168,9 @@
 
         <LinearLayout
             android:id="@+id/Linear_4"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
             android:orientation="horizontal">
 
             <Button
@@ -215,7 +221,7 @@
 
         <LinearLayout
             android:id="@+id/Linear_8"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -223,12 +229,14 @@
                 android:id="@+id/Linear_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:id="@+id/Linear_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
                     android:orientation="horizontal">
 
                     <Button
@@ -240,7 +248,7 @@
                     <Button
                         android:id="@+id/bt_2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="2" />
 
                     <Button
@@ -252,9 +260,10 @@
 
                 <LinearLayout
                     android:id="@+id/Linear_7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom">
 
                     <Button
                         android:id="@+id/bt_百分号"
@@ -280,13 +289,14 @@
                 android:id="@+id/bt_等号"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_gravity="left"
                 android:text="="
                 android:textColor="@android:color/background_dark" />
 
             <LinearLayout
                 android:id="@+id/Linear_11"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -324,8 +334,14 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/bt_换算"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="换算" />
+
+                    <Button
                         android:id="@+id/bt_帮助"
-                        android:layout_width="261dp"
+                        android:layout_width="173dp"
                         android:layout_height="match_parent"
                         android:text="帮助"
                         android:textAllCaps="false" />
@@ -333,6 +349,6 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
